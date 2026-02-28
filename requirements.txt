@@ -1,0 +1,3 @@
+qiskit==2.3.0
+matplotlib==3.10.8
+qiskit[visualization]==2.3.0
