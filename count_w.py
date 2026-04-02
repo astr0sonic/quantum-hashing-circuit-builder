@@ -54,7 +54,7 @@ def bfs_distances(lst):  # расстояние от i до всех остал�
 
 def get_binary(n, p):
     if len(p) == 0:
-        return np.array([1])
+        return np.ones(2**n)
     N = 2**n
     b = (np.arange(N)[:, None] >> np.arange(n - 1, -1, -1)) & 1
     # ТО ЖЕ ЧТО И 1 - 2*(np.sum(b[:,p], axis=1) % 2)
